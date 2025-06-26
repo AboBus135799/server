@@ -24,7 +24,9 @@ app.post("/check-password", (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 5000; // Используем порт из ENV или 5000 по умолчанию
+const PORT = process.env.PORT || 10000; // Используем порт из ENV или 5000 по умолчанию
 app.listen(PORT, () => {
   console.log(`Сервер запущен на порту ${PORT}`);
-});
+})
+
+let sdddddd;
