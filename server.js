@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const app = express();
 
-const STORED_PASSWORD = "123"; 
+const STORED_PASSWORD = "222444"; 
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -18,7 +18,7 @@ app.post("/check-password", (req, res) => {
   }
 
   if (password === STORED_PASSWORD) {
-    return res.json({ success: true, message: 'hello niggas'});
+    return res.json({ success: true, message: 'ВОНЮЧИЕ ПИСЬКИ'});
   } else {
     return res.json({ success: false });
   }
