@@ -3,7 +3,6 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const app = express();
-const PORT = 5000;
 
 const STORED_PASSWORD = "123"; 
 
@@ -25,6 +24,7 @@ app.post("/check-password", (req, res) => {
   }
 });
 
-/*app.listen(PORT, () => {
-  console.log(`Сервер запущен на http://localhost:${PORT}`);
-});*/
+const PORT = process.env.PORT || 5000; // Используем порт из ENV или 5000 по умолчанию
+app.listen(PORT, () => {
+  console.log(`Сервер запущен на порту ${PORT}`);
+});
