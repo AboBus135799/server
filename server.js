@@ -40,7 +40,7 @@ const server = express()
 server.use(cors());
 server.use(bodyParser.json());
 
-server.get('/', (req, res) => {
+server.get('/send', (req, res) => {
     console.log('Кто тебя жестко трахнул')
 })
 
