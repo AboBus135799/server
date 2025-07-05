@@ -41,7 +41,7 @@ server.use(cors());
 server.use(bodyParser.json());
 
 server.get('/', (req, res) => {
-    console.log('Кто тебя жестко трахнул со стонами ')
+    console.log('Кто тебя жестко трахнул')
 })
 
 server.listen(PORT, () =>{
