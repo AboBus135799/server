@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
@@ -28,5 +28,22 @@ const PORT = process.env.PORT || 10000; // Используем порт из EN
 app.listen(PORT, () => {
   console.log(`Сервер запущен на порту ${PORT}`);
 })
+*/
 
-let sdddddd;
+let express = require('express')
+let cors = require('cors')
+const bodyParser = require("body-parser");
+
+const PORT = process.env.PORT || 10000;
+const server = express()
+
+server.use(cors());
+server.use(bodyParser.json());
+
+server.get('/', (req, res) => {
+    console.log('Тебя трахнули')
+})
+
+server.listen(PORT, () =>{
+    console.log(`Сервер запущен на: http://localhost:${PORT}`)
+})
